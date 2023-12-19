@@ -9,5 +9,5 @@ urlpatterns = [
     #http(s)://ホスト名/以下のパスが''（無し）の場合
     #viewsモジュールのIndexViewを実行
     #URLパターン名は'index'
-    path('',views.indexView.as_view(),name='index'),
+    path('',views.IndexView.as_view(),name='index'),
 ]
