@@ -1,9 +1,7 @@
 <!--静的ファイルのURLを生成するststicタグをロードする -->
 {% load static %}
 
-<!--ページタイトル横のアイコンのURLを生成する-->
-<link rel="icon" type="image/x-icon"
-    href={% static 'assets/favicon.ico' %}/>
+
 
 
 <!DOCTYPE html>
@@ -15,6 +13,10 @@
         <meta name="author" content="" />
         <!--ページタイトル-->
         <title>Django's Blog</title>
+        <!--ページタイトル横に表示されるアイコン-->
+        <!--staticでfavicon.icoのURLを生成する-->
+        <link rel="icon" type="image/x-icon"
+        href={% static 'assets/favicon.ico' %} />
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
